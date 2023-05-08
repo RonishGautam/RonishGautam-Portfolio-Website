@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9439973a17.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Korina Claudia (1).png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class = "fas fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class = "fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Ronish</span><br>Gautam</h1>
+            </div>
+            <a href="images/Final Ronish Gautam Resume.pdf" download class="btt btt2 box">Download Resume</a>
+                </div>
+
+    </div>
+
+    <!--------------------------------about------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_1134.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me</h1>
+
+                    <p>
+                        Hello, My name is Ronish Gautam and I am a student pursuing a degree in Computer Science at Bellarmine University. I have been awarded the Career Pathways Scholarship at Bellarmine 
+                        I have always had a passion for technology and its potential to transform the world we live in. 
+                        I believe that software engineering is one of the most exciting and impactful careers in the tech industry, and I am committed to pursuing this path.
+                        At Bellarmine, I have had the opportunity to work on a variety of coding projects and hone my skills in languages such as Java, Python, and HTML/CSS.
+                        I am excited for what the future holds and look forward to connecting with others in the tech community!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul class="two-columns">
+                          <li>
+                            <span style="font-size: 20px; font-weight: bold;">Programming Languages</span>
+                            <ul>
+                              <li>Java</li>
+                              <li>JavaScript</li>
+                              <li>Python</li>
+                              <li>HTML/CSS</li>
+                            </ul>
+                          </li>
+                          <li>
+                            <span style="font-size: 20px; font-weight: bold;">Other Skills</span>
+                            <ul>
+                              <li>Project Planning</li>
+                              <li>Communication</li>
+                              <li>Problem Solving</li>
+                              <li>Customer Services</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span style="font-size: 20px; font-weight: bold;">August 2021 - May 2022</span><br>Worked in Walmart online grocery pickup</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span style="font-size: 20px; font-weight: bold;">2018-2022</span><br>High School Diploma</li>
+                            <li><span style="font-size: 20px; font-weight: bold;">2022-2026</span><br>BA in Computer Science</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------------------services--------------------->
+<div id="services">
+<div class="container">
+    <h1 class="sub-title"> My Services</h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java</h2>
+            <p>As a passionate computer science student, I offer Java development services for web applications,
+            enterprise-level systems, custom APIs, and Android mobile applications. </p> 
+            <a href="#"> learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-sharp fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p> I offer web development services using modern front-end web technologies such as HTML, CSS, and JavaScript.
+                My services include developing responsive and user-friendly websites, customizing and enhancing existing websites, and optimizing website.  </p> 
+            <a href="#"> learn more</a>
+        </div>
+
+
+        <div>
+            <i class="fa-regular fa-handshake"></i>
+            <h2>E-commerce Development</h2>
+            <p>I offer e-commerce development services to help clients build and optimize online stores and 
+                marketplaces using platforms such as Shopify, Magento, or WooCommerce. </p> 
+            <a href="#"> learn more</a>
+        </div>
+
+  
+
+    </div>
+</div>
+</div>
+
+
+<!-----------------------profilo--------------------->
+
+
+
+
+<!-----------------------Contact--------------------->
+
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>mrronish.gautam@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i>5025926151</p>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/502.nish/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ronish-gautam-490202270/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/Ronish70968181" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/RonishGautam" target="_blank"> <i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder = "Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+            
+
+
+
+        </div>
+
+
+    
+
+
+</div>
+
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+    
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+
+
+</script>
+
+
+</body>
+</html>
