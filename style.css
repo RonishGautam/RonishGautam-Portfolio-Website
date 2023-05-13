@@ -19,13 +19,16 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-/*backgorund images goes here*/
     background-size: cover;
     background-position: center;
 }
 
 .container{
-    padding: 10px 10%;
+    padding: 10px 5%;
+    background-image: url(images/black-wallpaper-20072315092912.jpg);
+    background-size: cover;
+    background-position: center;
+    
 }
 
 nav{
@@ -33,6 +36,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background-color: #333;
+    padding: 30px 5%;
 }
 .logo{
     width: 140px;
@@ -40,7 +50,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+  
 
 }
 
@@ -49,6 +59,10 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    margin: 10px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #666;
+    padding: 10px 0;
 }
 
 nav ul li a::after{
@@ -73,15 +87,19 @@ nav ul li a:hover::after{
     text-decoration: none;
     border: 2px solid #0095ff;
     border-radius: 6px;
+    
 }
+
 .btt:hover,
 .btt2:hover {
   background-color: rgba(209, 179, 9, 0.959);
+  
 }
 .box {
     border: 2px solid #0095ff;
     padding: 10px;
-  }
+    
+}
 
 .header-text {
     margin-top: 20%;
@@ -93,14 +111,40 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 
+
+
 .header-text h1 span{
     color: rgb(206, 172, 21);
 }
+.col-sm-8{
+    flex-basis: 35%;
+    
+}
+.col-sm-8 img{
+    width:100%;
+    border-radius: 10px;
+   margin-top: -500px;
+ 
+}
+.rows{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
 
 /*--------------------------------about-------------------------------------------*/
 #about{
     padding:80px 0;
 
+}
+.containers{
+    padding: 10px 5%;
+    background-image: linear-gradient(to right, #0D0D0D, #202020);
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 .row{
     display:flex;
@@ -108,6 +152,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 
 }
+
 .about-col-1{
     flex-basis: 35%;
 }
@@ -193,7 +238,12 @@ nav ul li a:hover::after{
 #services {
   padding: 30px 0;
 }
-
+.containerss {
+    margin-bottom: 400px; /* Add margin-bottom to create space below the services section */
+}
+#contact {
+    padding-top: 20px; /* Add padding-top to create space above the contact section */
+  }
 .services-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -237,6 +287,7 @@ nav ul li a:hover::after{
 
 }
 
+
 /*--------------------------------profilo-------------------------------------------*/
 
 
@@ -247,7 +298,15 @@ nav ul li a:hover::after{
 .contact-left{
     flex-basis: 35%;
 }
-
+.containersss{
+    padding: 10px 5%;
+    background-image: url(images/pexels-rahul-716398.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 20px;
+    
+}
 .contact-right{
     flex-basis: 60%;
 }
@@ -293,6 +352,7 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: rgb(206, 172, 21);
+    float: right;
 }
 .contact-right form{
     width: 100%;
@@ -320,33 +380,65 @@ form btn2{
 nav .fas{
     display: none;
 }
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 10px 20px;
+    background-color: #bc09e9;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
 /*--------------------------------For Small Screen-------------------------------------------*/
 @media only screen and (max-width: 600px){
 
-   #header{
-    background: #080808;
-   }
-
+     #header{
+        background-color: #080808;
+        
+    }
+   
+   
     .header-text{
         margin-top: 100%;
         font-size: 16px;
+        margin-bottom: 100px;
 
     }
 
     .header-text h1{
         font-size: 30px;
+        
+    }
+    .btt.btt2 {
+        display: block;
+        margin: 10px auto;
+        width: 50%;
+    }
+ 
+    .col-sm-8 img{
+        display: none;
     }
 
     nav .fas{
         display: block;
         font-size: 25px;
+        left: 100%;
+        
+    }
+    nav{
+        left: 95%;
     }
     nav ul{
         background: rgb(206, 172, 21); 
         position: fixed;
         top: 0;
-        right: -200px;
+        right: 100%;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
@@ -370,7 +462,7 @@ nav .fas{
         font-size: 40px;
     }
 
-
+   
 
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -378,10 +470,14 @@ nav .fas{
 
     .about-col-1{
         margin-bottom: 30px;
+        transform: scale(0.9)
+
     }
+    
     .about-col-2{
         font-size: 14px;
     }
+    
 
 
     .tab-links{
